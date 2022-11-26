@@ -1,8 +1,11 @@
+import { DICTIONARY_HEADER } from "../../utils/Dictionary.header";
 import { useId } from "react";
 import appLogo from "../../assets/logo.png";
 import { Home as HomeScreen } from "../../utils/Images.screens";
 import { HEADER_LINKS } from "../../utils/Menu.header";
 import { HeaderLink } from "../HeaderLink";
+
+const LANG = "pt";
 
 export function Header() {
   return (
@@ -18,7 +21,7 @@ export function Header() {
         </div>
         <div className="space-x-12 font-semibold text-xl text-white">
           {HEADER_LINKS.map(({ title, url }) => (
-            <HeaderLink key={useId()} title={title} url={url} />
+            <HeaderLink key={useId()} title={title[LANG]} url={url} />
           ))}
         </div>
       </nav>
@@ -28,9 +31,7 @@ export function Header() {
           <article className="w-3/4">
             <h1 className="font-bold text-6xl text-white my-4">Notes Share</h1>
             <p className="text-2xl text-white mb-8">
-              Tira fotos, usufrui de uma um dossiê online para guardar,
-              organizar e compartilhar as tuas notas e apontamentos com os teus
-              colegas e amigos.
+             {DICTIONARY_HEADER.DESCRIPTION[LANG]}
               <br />
               <span className="italic font-light py-6">
                 Share your note with Notes Share
@@ -41,7 +42,7 @@ export function Header() {
             className="p-5 bg-white text-center w-fit rounded-md font-semibold text-gray-700 hover:drop-shadow-2xl ease duration-300 hover:bg-gray-100"
             href="#download"
           >
-            OBTÉM AGORA
+          {DICTIONARY_HEADER.BUTTON[LANG]}
           </a>
         </div>
         <img

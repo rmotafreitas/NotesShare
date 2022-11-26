@@ -2,6 +2,8 @@ import { useId } from "react";
 import { FOOTER_LINKS } from "../../utils/Menu.footer";
 import { FooterLink } from "../FooterLink";
 
+const LANG = "en";
+
 export function Footer() {
   return (
     <footer className="py-8 mt-8 bg-gray-900" id="footer">
@@ -11,7 +13,7 @@ export function Footer() {
             <p className="py-2 font-bold">MENU</p>
             <div className="flex flex-col gap-2 mt-4 font-medium">
               {FOOTER_LINKS.map(({ title, url }) => (
-                <FooterLink key={useId()} title={title} url={url} />
+                <FooterLink key={useId()} title={title[LANG]} url={url} />
               ))}
             </div>
           </div>
