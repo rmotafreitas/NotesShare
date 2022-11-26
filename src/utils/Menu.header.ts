@@ -1,30 +1,51 @@
 export const HEADER_LINKS: any[] = [
   {
-    title: "Home",
+    title: {
+      pt: "Home",
+      en: "Home",
+    },
     url: "#home",
   },
   {
-    title: "Funcionalidades",
+    title: {
+      pt: "Funcionalidades",
+      en: "Features ",
+    },
     url: "#features",
   },
   {
-    title: "Pré Visualização",
+    title: {
+      pt: "Pré-Visualização",
+      en: "Preview",
+    },
     url: "#preview",
   },
   {
-    title: "A Nossa Equipa",
+    title: {
+      pt: "A Nossa Equipa",
+      en: "Our Team",
+    },
     url: "#team",
   },
   {
-    title: "Obter",
+    title: {
+      pt: "Download",
+      en: "Download",
+    },
     url: "#download",
   },
   {
-    title: "Novidades",
+    title: {
+      pt: "Novidades",
+      en: "News",
+    },
     url: "#news",
   },
   {
-    title: "Contactos",
+    title: {
+      pt: "Contactos",
+      en: "Contacts",
+    },
     url: "#footer",
   },
 ];

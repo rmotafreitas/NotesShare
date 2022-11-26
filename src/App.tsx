@@ -37,7 +37,7 @@ function App() {
       </section>
 
       <section className="py-8" id="preview">
-        <Title title="Pré Visualização" />
+        <Title title={DICTIONARY_TITLES.FEATURES[LANG]} />
         <div className="flex flex-wrap justify-center p-10">
           {PREVIEW_SCREENS.map(({ title, image }) => (
             <PreviewPhone title={title} image={image} />
@@ -46,15 +46,15 @@ function App() {
       </section>
 
       <section className="py-8 m-0 flex flex-col items-center" id="team">
-        <Title title="A Nossa Equipa" />
+        <Title title={DICTIONARY_TITLES.OURTEAM[LANG]} />
         <div className="grid grid-cols-2 max-md:flex max-md:flex-wrap max-md:justify-center place-items-center gap-x-5 gap-y-2 container mx-auto">
           {TEAM_MEMBERS.map(({ name, age, role, hobby, mail, photo }) => (
             <CardMember
               key={useId()}
               name={name}
               age={age}
-              role={role}
-              hobby={hobby}
+              role={role[LANG]}
+              hobby={hobby[LANG]}
               mail={mail}
               photo={photo}
             />
@@ -65,14 +65,14 @@ function App() {
       <Download />
 
       <section className="py-8" id="news">
-        <Title title="Novidades" />
+        <Title title={DICTIONARY_TITLES.NEWS[LANG]} />
         <div className="flex flex-row justify-center gap-8">
           {NEWS.map(({ title, description, image, date }) => (
             <CardNew
               key={useId()}
               date={date}
-              title={title}
-              description={description}
+              title={title[LANG]}
+              description={description[LANG]}
               image={image}
             />
           ))}
