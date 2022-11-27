@@ -1,6 +1,6 @@
-export const DICTIONARY_TITLES = {
+export const DICTIONARY_FOOTER: any = {
   CONTACT_US: {
-    pt: "Entra em contacto conosco através das nossas redes sociais",
+    pt: "Entra em contacto connosco através das nossas redes sociais",
     en: "Contact us through our social networks",
   },
   SEND_US_A_MESSAGE: {

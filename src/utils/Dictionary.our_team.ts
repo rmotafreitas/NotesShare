@@ -1,22 +1,22 @@
-export const DICTIONARY_OURTEAM = {
+export const DICTIONARY_OURTEAM: any = {
   NAME: {
     pt: "Nome",
     en: "Name",
   },
   AGE: {
     pt: "Idade",
-    en: "Age"
+    en: "Age",
   },
   HOBBY: {
     pt: "Hobby",
-    en: "Hobby"
+    en: "Hobby",
   },
   CONTACT: {
     pt: "Contacto",
-    en: "Contact"
+    en: "Contact",
   },
   ROLE: {
     pt: "Cargo",
-    en: "Role"
-  }
+    en: "Role",
+  },
 };

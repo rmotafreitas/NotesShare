@@ -1,4 +1,4 @@
-export const DICTIONARY_TITLES = {
+export const DICTIONARY_TITLES: any = {
   FEATURES: {
     pt: "Funcionalidades",
     en: "Features",
@@ -19,8 +19,8 @@ export const DICTIONARY_TITLES = {
     pt: "Novidades",
     en: "News",
   },
-  CONTACT:{
+  CONTACT: {
     pt: "Contactos",
     en: "Contacts",
-  }
+  },
 };

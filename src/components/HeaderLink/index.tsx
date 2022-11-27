@@ -5,8 +5,14 @@ export interface Props {
 
 export function HeaderLink({ title, url }: Props) {
   return (
-    <a className="hover:text-gray-300 ease duration-100" href={url}>
-      {title}
-    </a>
+    <li>
+      <a
+        href={url}
+        className="block py-2 pl-3 pr-4 text-white text-md rounded md:bg-transparent md:p-0"
+        aria-current="page"
+      >
+        {title}
+      </a>
+    </li>
   );
 }

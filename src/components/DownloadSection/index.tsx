@@ -1,12 +1,19 @@
 import { DICTIONARY_TITLES } from "../../utils/Dictionary.titles";
 import { DICTIONARY_DOWNLOAD } from "../../utils/Dictionary.download";
-const LANG = "en";
 import { Title } from "../TItle";
 import Phone from "../../assets/download.png";
 
-export function Download() {
+import { useContext } from "react";
+import { LangContext, LangContextProps } from "../../contexts/Lang.context";
+
+export function DownloadSection() {
+  const { LANG }: LangContextProps = useContext(LangContext);
+
   return (
-    <section className="pt-8 mb-8 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+    <section
+      className="pt-8 mb-8 bg-gradient-to-r from-violet-500 to-fuchsia-500"
+      id="download"
+    >
       <Title title={DICTIONARY_TITLES.DOWNLOAD[LANG]} color="white" />
       <div className="flex my-8 mx-auto container justify-center">
         <img
@@ -30,7 +37,9 @@ export function Download() {
                 </svg>
                 <div className="flex flex-col text-white text-lg group-hover:text-purple-600 ease-in duration-100">
                   <p className="font-semibold">Play Store</p>
-                  <p className="font-medium">{DICTIONARY_DOWNLOAD.COMING_SOON[LANG]}...</p>
+                  <p className="font-medium">
+                    {DICTIONARY_DOWNLOAD.COMING_SOON[LANG]}...
+                  </p>
                 </div>
               </a>
               <div className="w-24 flex items-center justify-center border-4 border-white rounded-lg">
@@ -60,7 +69,9 @@ export function Download() {
                 </svg>
                 <div className="flex flex-col text-white text-lg group-hover:text-purple-600 ease-in duration-100">
                   <p className="font-semibold">App Store</p>
-                  <p className="font-medium">{DICTIONARY_DOWNLOAD.COMING_SOON[LANG]}...</p>
+                  <p className="font-medium">
+                    {DICTIONARY_DOWNLOAD.COMING_SOON[LANG]}...
+                  </p>
                 </div>
               </a>
               <div className="w-24 flex items-center justify-center border-4 border-white rounded-lg">
@@ -90,12 +101,14 @@ export function Download() {
                 </svg>
                 <div className="flex flex-col text-white text-lg group-hover:text-purple-600 ease-in duration-100">
                   <p className="font-semibold">APK</p>
-                  <p className="font-medium">{DICTIONARY_DOWNLOAD.COMING_SOON[LANG]}...</p>
+                  <p className="font-medium">
+                    {DICTIONARY_DOWNLOAD.COMING_SOON[LANG]}...
+                  </p>
                 </div>
               </a>
               <div className="w-24 flex items-center justify-center border-4 border-white rounded-lg">
                 <div className="p-4 flex flex-col items-center justify-around">
-                  <p className="text-white font-semibold">100 Mb</p>
+                  <p className="text-white font-semibold">100MB</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
