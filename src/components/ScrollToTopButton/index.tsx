@@ -16,13 +16,13 @@ export function ScrollToTopButton() {
   }, []);
 
   return (
-    buttonIsVisible && (
-      <button
-        className="flex items-center justify-center fixed w-12 h-12 bottom-5 right-5 bg-white rounded-full border-[#b21fa6] border-2 drop-shadow-2xl"
-        onClick={handleScrollToTop}
-      >
-        <ArrowUp size={24} color="#b21fa6" />
-      </button>
-    )
+    <button
+      className={`flex items-center justify-center fixed w-12 h-12 bottom-5 right-5 bg-white rounded-full border-[#b21fa6] border-2 drop-shadow-2xl ${
+        buttonIsVisible ? "block" : "hidden"
+      }`}
+      onClick={handleScrollToTop}
+    >
+      <ArrowUp size={24} color="#b21fa6" />
+    </button>
   );
 }
