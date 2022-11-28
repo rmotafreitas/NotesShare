@@ -42,7 +42,7 @@ export function DownloadSection() {
                   </p>
                 </div>
               </a>
-              <div className="w-24 flex items-center justify-center border-4 border-white rounded-lg">
+              <div className="max-sm:hidden w-24 flex items-center justify-center border-4 border-white rounded-lg">
                 <div className="p-4 flex flex-col items-center justify-around">
                   <p className="text-white font-semibold">500</p>
                   <svg
@@ -74,7 +74,7 @@ export function DownloadSection() {
                   </p>
                 </div>
               </a>
-              <div className="w-24 flex items-center justify-center border-4 border-white rounded-lg">
+              <div className="max-sm:hidden w-24 flex items-center justify-center border-4 border-white rounded-lg">
                 <div className="p-4 flex flex-col items-center justify-around">
                   <p className="text-white font-semibold">4,5</p>
                   <svg
@@ -106,7 +106,7 @@ export function DownloadSection() {
                   </p>
                 </div>
               </a>
-              <div className="w-24 flex items-center justify-center border-4 border-white rounded-lg">
+              <div className="max-sm:hidden w-24 flex items-center justify-center border-4 border-white rounded-lg">
                 <div className="p-4 flex flex-col items-center justify-around">
                   <p className="text-white font-semibold">100MB</p>
                   <svg

@@ -19,7 +19,7 @@ import { DICTIONARY_TITLES } from "./utils/Dictionary.titles";
 import { LangContext, LangContextProps } from "./contexts/Lang.context";
 import { DEFAULT_LANG } from "./utils/Config.import";
 
-import ScrollToTop from "react-scroll-to-top";
+import { ScrollToTopButton } from "./components/ScrollToTopButton";
 
 function App() {
   const lang = localStorage.getItem("lang") || DEFAULT_LANG;
@@ -93,7 +93,7 @@ function App() {
           </div>
         </section>
 
-        <ScrollToTop smooth color="purple" />
+        <ScrollToTopButton />
 
         <Footer />
       </div>
