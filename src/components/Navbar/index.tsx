@@ -16,7 +16,7 @@ export function Navbar() {
       <div className="container flex flex-wrap items-center justify-between mx-auto">
         <a href="#home" className="flex items-center">
           <img src={Logo} className="h-6 mr-3 sm:h-9" alt="Notes Share Logo" />
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
             Notes Share
           </span>
         </a>

@@ -1,9 +1,6 @@
 import { DICTIONARY_HEADER } from "../../utils/Dictionary.header";
-import { useContext, useId } from "react";
-import appLogo from "../../assets/logo.png";
+import { useContext } from "react";
 import { Home as HomeScreen } from "../../utils/Images.screens";
-import { HEADER_LINKS } from "../../utils/Menu.header";
-import { HeaderLink } from "../HeaderLink";
 import { Navbar } from "../Navbar";
 import { LangContext, LangContextProps } from "../../contexts/Lang.context";
 

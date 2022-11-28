@@ -29,7 +29,7 @@ export const HEADER_LINKS: any[] = [
   },
   {
     title: {
-      pt: "Download",
+      pt: "Transferir",
       en: "Download",
     },
     url: "#download",
