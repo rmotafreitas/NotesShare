@@ -55,7 +55,7 @@ export const TEAM_MEMBERS: any[] = [
       en: "Developer",
     },
     photo: RicardoFreitas,
-    age: 17,
+    age: 18,
     mail: "1221170@isep.ipp.pt",
     hobby: {
       pt: "Fazer Yoga 🧘",
